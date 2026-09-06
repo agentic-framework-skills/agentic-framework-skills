@@ -19,6 +19,7 @@ npx skills add agentic-framework-skills/AESEv2
 npx skills add agentic-framework-skills/AHSE
 npx skills add agentic-framework-skills/GHW
 npx skills add agentic-framework-skills/OSMv6
+npx skills add agentic-framework-skills/ABSEv1
 
 # Use a skill without installing it
 npx skills use agentic-framework-skills/AHSE
@@ -32,6 +33,7 @@ npx skills use agentic-framework-skills/AHSE
 | **[AHSE](https://github.com/agentic-framework-skills/AHSE)** | Autonomous Hardware & Software Product Synthesis Engine | Full HW/SW product blueprint (real BOM, firmware, edge AI, cloud API, UI/UX) from zero context. | `STAGE-999: SUCCESS_DELIVERY` / `BURNOUT-000: VIABILITY_COLLAPSE` |
 | **[GHW](https://github.com/agentic-framework-skills/GHW)** | Git Workflow | Enforces topic branches, no-rebase, SemVer tags, and "sync git" semantics across repo work. | _(alwaysApplied rule set — no terminal code)_ |
 | **[OSMv6](https://github.com/agentic-framework-skills/OSMv6)** | Orchestrator Engine (Unified Waterfall Routing, Async Healing, Constrained Reinforcement) | Stateful event machine: prompt routing (exact → semantic, negation/sentiment-aware), confidence thresholds, tool execution with auto-continue, reinforcement learning, and HMAC-gated async callbacks. | _(continuous event loop — no terminal code)_ |
+| **[ABSEv1](https://github.com/agentic-framework-skills/ABSEv1)** | Autonomous Blueprint Synthesis Engine (AESE methodology, architecture-agnostic) | Complete application blueprint for any user-declared infrastructure (cloud, edge, containers, bare-metal) with 5W2H, tier-bound Lean validation, and IaC. | `STAGE-999: SUCCESS_DELIVERY` / `BURNOUT-000: TIER_CONSTRAINT_VIOLATION` |
 
 ## Trigger patterns
 
@@ -39,6 +41,7 @@ npx skills use agentic-framework-skills/AHSE
 - `INIT` — synthesize a complete HW/SW product from the provided context. *(AHSE)*
 - `GHW` — always applied; enforces this organization's Git workflow on every generation. *(GHW)*
 - `<user prompt>` / `<callback>` — OSMv6 routes, executes, and self-heals the request pipeline on each event. *(OSMv6)*
+- `WHAT <concept> on <infra> <tier>` then `INIT` — describe product + infrastructure + tier, then synthesize blueprint. *(ABSEv1)*
 
 ## License
 
